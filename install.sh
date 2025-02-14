@@ -1,11 +1,16 @@
 #! /bin/sh
 servicedirectory="./service"
+crealitydirectory="/mnt/UDISK/creality/userdata/box"
 
 # Installs filament-sync-watcher service to the system
 
 # Create data folder if it doesn't exist
 echo "Creating data directory"
 mkdir -p data
+cp -a $crealitydirectory/material_option.json ./data
+cp -a $crealitydirectory/material_database.json ./data
+
+
 
 # Add new rc.local
 echo "Enabling sync when printer boots"

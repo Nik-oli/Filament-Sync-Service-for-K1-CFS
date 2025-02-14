@@ -37,16 +37,16 @@ https://github.com/jamincollins/k2-improvements
 
 #### Clone this repo into home folder
 
-    cd /root
+>   cd /root
 
     git clone https://github.com/HurricanePrint/Filament-Sync-Service.git
 
     
 #### Install
 
-    cd Filament-Sync-Service/
+>   cd Filament-Sync-Service/
 
-    sh install.sh
+>   sh install.sh
 
 #### All done! Continue to install Filament-Sync on your pc
-    https://github.com/HurricanePrint/Filament-Sync
+[Filament-Sync](https://github.com/HurricanePrint/Filament-Sync)
