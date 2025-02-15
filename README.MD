@@ -75,3 +75,11 @@ sh install.sh
 
 #### All done! Continue to install Filament-Sync on your pc
 [Filament-Sync](https://github.com/HurricanePrint/Filament-Sync)
+
+## Updating
+
+If there is a new update all you have to do is re-clone the repo. Running the install script again is not needed.
+
+```
+git clone https://github.com/HurricanePrint/Filament-Sync-Service.git
+```
