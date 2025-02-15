@@ -10,6 +10,10 @@ This is the printer service that syncs custom profiles with the printer database
 #### Install Entware from jamincollins k2-improvements script
 https://github.com/jamincollins/k2-improvements
 
+Download the repo and place the folder on a FAT32 formatted USB drive
+
+Plug it into the printer
+
 ```
 ssh root@your-printer-ip
 ```
