@@ -78,13 +78,23 @@ sh install.sh
 
 ## Updating
 
-If there is a new update all you have to do is re-clone the repo. Running the install script again is not needed.
-
 Delete the old folder
+
 ```
 rm -rf Filament-Sync-Service/
 ```
 Re-Clone
+
 ```
 git clone https://github.com/HurricanePrint/Filament-Sync-Service.git
+```
+
+Enter folder and run install
+
+```
+cd Filament-Sync-Service
+```
+
+```
+sh install.sh
 ```
