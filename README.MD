@@ -23,7 +23,7 @@ sh /mnt/exUDISK/k2-improvements/entware/menu.sh
 ```
 
     Select option 1 to install Entware
-    If it says it's already installed - Select option a
+    If it says it's already installed and you haven't installed it - Delete and recopy the folder onto your usb drive
 
     Press Ctrl-C if you get stuck in the Obico "Scanning local network" prompt
 
