@@ -38,13 +38,7 @@ exit
 ssh root@your-printer-ip
 ```
 
-#### Install sftp server onto printer
-    
-```
-opkg install openssh-sftp-server
-```
-
-#### Install git onto printer
+#### Install git
 
 ```
 opkg install git
