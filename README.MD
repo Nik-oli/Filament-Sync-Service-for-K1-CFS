@@ -22,6 +22,9 @@ ssh root@your-printer-ip
 ```
 cp -R /mnt/exUDISK/Filament-Sync-Service /root/
 ```
+```
+cd Filament-Sync-Service
+```
 
 ```
 sh install.sh
