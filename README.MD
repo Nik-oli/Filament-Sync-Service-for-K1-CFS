@@ -20,7 +20,7 @@ Plug it into the printer
 ssh root@your-printer-ip
 ```
 ```
-cp -R /mnt/exUDISK/Filament-Sync-Service /root/
+cp -R /mnt/exUDISK/Filament-Sync-Service $HOME/
 ```
 ```
 cd Filament-Sync-Service
