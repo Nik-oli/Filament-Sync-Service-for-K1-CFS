@@ -8,9 +8,13 @@ This is the printer service that syncs custom profiles with the printer database
 
 ## Installation
 
+Git is installed if you are using @jamincollins k2-improvements
+
+### If git is not installed on printer
+
 #### Download the latest release and copy to printer
 
-[Latest Release](https://github.com/HurricanePrint/Filament-Sync-Service/releases/latest/download/Filament-Sync-Service.zip)
+[Latest Release](https://github.com/HurricanePrint/Filament-Sync-Service/releases/download/Release/Filament-Sync-Service.zip)
 
 Extract and place the Filament-Sync-Service folder on a FAT32 formatted USB drive
 
@@ -20,7 +24,7 @@ Plug it into the printer
 ssh root@your-printer-ip
 ```
 ```
-cp -R /mnt/exUDISK/Filament-Sync-Service $HOME/
+cp -R /mnt/exUDISK/Filament-Sync-Service /root/
 ```
 ```
 cd Filament-Sync-Service
@@ -33,7 +37,7 @@ sh install.sh
 #### All done! Continue to install Filament-Sync on your pc
 [Filament-Sync](https://github.com/HurricanePrint/Filament-Sync)
 
-## Updating
+### Updating
 
 Delete the old folder
 
@@ -42,3 +46,27 @@ rm -rf Filament-Sync-Service/
 ```
 
 Continue with install instructions
+
+## If git is installed
+
+```
+git clone https://github.com/HurricanePrint/Filament-Sync-Service.git
+```
+
+```
+cd Filament-Sync-Service
+```
+
+```
+sh install.sh
+```
+
+### Updating
+
+``` 
+cd Filament-Sync-Service
+```
+
+```
+git pull
+```
