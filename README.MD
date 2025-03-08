@@ -61,6 +61,9 @@ cd Filament-Sync-Service
 sh install.sh
 ```
 
+#### All done! Continue to install Filament-Sync on your pc
+[Filament-Sync](https://github.com/HurricanePrint/Filament-Sync)
+
 ### Updating
 
 ``` 
