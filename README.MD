@@ -10,7 +10,7 @@ This is the printer service that syncs custom profiles with the printer database
 
 #### Download the latest release and copy to printer
 
-[Latest Release](https://github.com/HurricanePrint/Filament-Sync-Service/releases/download/Release/Filament-Sync-Service.zip)
+[Latest Release](https://github.com/HurricanePrint/Filament-Sync-Service/releases/latest/download/Filament-Sync-Service.zip)
 
 Extract and place the Filament-Sync-Service folder on a FAT32 formatted USB drive
 
