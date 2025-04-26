@@ -12,7 +12,7 @@ Git is installed if you are using @jamincollins k2-improvements
 
 ### If git is not installed on printer
 
-Download the [Latest Release](https://github.com/HurricanePrint/Filament-Sync-Service/releases/download/Release/Filament-Sync-Service.zip)
+Download the [Latest Release](https://github.com/HurricanePrint/Filament-Sync-Service/releases/latest)
 
 Extract and place the Filament-Sync-Service folder on a FAT32 formatted USB drive
 
