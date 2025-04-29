@@ -8,7 +8,7 @@ This is the printer service that syncs custom profiles with the printer database
 
 ## Installation
 
-Git is installed if you are using @jamincollins k2-improvements
+Git is already installed if you are using @jamincollins k2-improvements
 
 ### If git is not installed on printer
 
