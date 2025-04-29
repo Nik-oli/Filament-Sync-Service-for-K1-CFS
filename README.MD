@@ -18,6 +18,8 @@ Extract and place the Filament-Sync-Service folder on a FAT32 formatted USB driv
 
 Plug it into the printer
 
+In Terminal
+
 ```
 ssh root@your-printer-ip
 ```
@@ -33,6 +35,8 @@ sh install.sh
 ```
 
 ### If git is installed
+
+In Terminal
 
 ```
 git clone https://github.com/HurricanePrint/Filament-Sync-Service.git
@@ -55,6 +59,8 @@ sh install.sh
 
 Delete the old folder
 
+Connect with ssh
+
 ```
 rm -rf Filament-Sync-Service/
 ```
@@ -63,16 +69,18 @@ Continue with install instructions
 
 ### With git
 
+Connect with ssh
+
+```
+cd Filament-Sync-Service
+```
+
 ```
 git fetch --all
 ```
 
 ```
 git reset --hard origin/main 
-```
-
-```
-cd Filament-Sync-Service
 ```
 
 ```
