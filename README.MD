@@ -12,7 +12,7 @@ Git is installed if you are using @jamincollins k2-improvements
 
 ### If git is not installed on printer
 
-Download the [Latest Release](https://github.com/HurricanePrint/Filament-Sync-Service/releases/latest)
+Download the [Latest Release](https://github.com/HurricanePrint/Filament-Sync-Service/releases/download/Release/Filament-Sync-Service.zip)
 
 Extract and place the Filament-Sync-Service folder on a FAT32 formatted USB drive
 
@@ -32,20 +32,7 @@ cd Filament-Sync-Service
 sh install.sh
 ```
 
-#### All done! Continue to install Filament-Sync on your pc
-[Filament-Sync](https://github.com/HurricanePrint/Filament-Sync)
-
-### Updating
-
-Delete the old folder
-
-```
-rm -rf Filament-Sync-Service/
-```
-
-Continue with install instructions
-
-## If git is installed
+### If git is installed
 
 ```
 git clone https://github.com/HurricanePrint/Filament-Sync-Service.git
@@ -62,12 +49,36 @@ sh install.sh
 #### All done! Continue to install Filament-Sync on your pc
 [Filament-Sync](https://github.com/HurricanePrint/Filament-Sync)
 
-### Updating
+## Updating
 
-``` 
+### Without git
+
+Delete the old folder
+
+```
+rm -rf Filament-Sync-Service/
+```
+
+Continue with install instructions
+
+### With git
+
+```
+git fetch --all
+```
+
+```
+git reset --hard origin/main 
+```
+
+```
 cd Filament-Sync-Service
 ```
 
 ```
-git pull
+sh install.sh
 ```
+
+#### All done! Continue to install Filament-Sync on your pc
+[Filament-Sync](https://github.com/HurricanePrint/Filament-Sync)
+

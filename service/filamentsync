@@ -1,0 +1,12 @@
+#!/bin/sh /etc/rc.common
+ 
+START=99
+STOP=15
+ 
+start() {        
+    sh $HOME/Filament-Sync-Service/service/sync.sh
+}                 
+ 
+stop() {          
+        echo stop
+}

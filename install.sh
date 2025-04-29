@@ -2,20 +2,14 @@
 servicedirectory="./service"
 crealitydirectory="/mnt/UDISK/creality/userdata/box"
 
-# Installs filament-sync-watcher service to the system
-
 # Create data folder if it doesn't exist
 echo "Creating data directory"
 mkdir -p data
-cp -a $crealitydirectory/material_option.json ./data
-cp -a $crealitydirectory/material_database.json ./data
 
-
-
-# Add new rc.local
-echo "Enabling sync when printer boots"
-cp ${servicedirectory}/rc.local /etc/
-chmod +x /etc/rc.local
+#install and enable startup service
+cp ${servicedirectory}/filamentsync /etc/init.d/
+chmod +x /etc/init.d/filamentsync
+/etc/init.d/filamentsync enable
 
 echo "Ready to sync"
 echo "Make sure tool is set in your slicers post-processing options"
