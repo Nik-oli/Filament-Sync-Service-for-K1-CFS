@@ -1,12 +1,16 @@
 #!/bin/sh /etc/rc.common
  
-START=99
-STOP=15
- 
-start() {        
-    sh $HOME/Filament-Sync-Service/service/sync.sh
-}                 
- 
-stop() {          
-        echo stop
+START=95
+USE_PROCD=1
+
+start_service() {
+        if test -f "/root/Filament-Sync-Service/service/sync.sh"; then
+        SYNCSCRIPT="/root/Filament-Sync-Service/service/sync.sh"
+        else
+        SYNCSCRIPT="/mnt/UDISK/root/Filament-Sync-Service/service/sync.sh" 
+        fi
+        procd_open_instance
+        procd_set_param command sh ${SYNCSCRIPT}
+        procd_set_param respawn  # respawn the service if it exits
+        procd_close_instance
 }

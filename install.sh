@@ -9,7 +9,9 @@ mkdir -p data
 #install and enable startup service
 cp ${servicedirectory}/filamentsync /etc/init.d/
 chmod +x /etc/init.d/filamentsync
+chmod +x ${servicedirectory}/sync.sh
 /etc/init.d/filamentsync enable
+/etc/init.d/filamentsync start
 
 echo "Ready to sync"
 echo "Make sure tool is set in your slicers post-processing options"
