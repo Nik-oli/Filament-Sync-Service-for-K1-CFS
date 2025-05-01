@@ -10,7 +10,10 @@ CREALITYDIRECTORY="/mnt/UDISK/creality/userdata/box"
 
 while :
 do
-    echo "Syncing"
-    cp -a ${SYNCDIRECTORY}/* ${CREALITYDIRECTORY}
+    syncedfilesize=$(stat -c%s "$SYNCDIRECTORY/material_database.json")
+    targetfilesize=$(stat -c%s "$CREALITYDIRECTORY/material_database.json")
+    if([ $syncedfilesize != $targetfilesize ]);then
+        cp -a ${SYNCDIRECTORY}/* ${CREALITYDIRECTORY}
+    fi
     sleep 15
 done
