@@ -1,9 +1,16 @@
 #!/bin/sh
-syncdirectory="$HOME/Filament-Sync-Service/data"
-crealitydirectory="/mnt/UDISK/creality/userdata/box"
+
+if test -f "/root/Filament-Sync-Service/service/sync.sh"; then
+SYNCDIRECTORY="/root/Filament-Sync-Service/data"
+else
+SYNCDIRECTORY="/mnt/UDISK/root/Filament-Sync-Service/data" 
+fi
+
+CREALITYDIRECTORY="/mnt/UDISK/creality/userdata/box"
 
 while :
 do
-    cp -a $syncdirectory/* $crealitydirectory
+    echo "Syncing"
+    cp -a ${SYNCDIRECTORY}/* ${CREALITYDIRECTORY}
     sleep 15
 done
