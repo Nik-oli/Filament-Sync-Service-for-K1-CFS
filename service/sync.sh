@@ -11,12 +11,7 @@ CREALITYDIRECTORY="/mnt/UDISK/creality/userdata/box"
 while :
 do
     if test -f "$SYNCDIRECTORY/material_database.json"; then
-        syncedfilesize=$(stat -c%s "$SYNCDIRECTORY/material_database.json")
-        targetfilesize=$(stat -c%s "$CREALITYDIRECTORY/material_database.json")
-        if([ $syncedfilesize != $targetfilesize ]);then
-            cp -a ${SYNCDIRECTORY}/. ${CREALITYDIRECTORY}
-        fi
+        rsync -a ${SYNCDIRECTORY}/ ${CREALITYDIRECTORY}
     fi
-
     sleep 15
 done
