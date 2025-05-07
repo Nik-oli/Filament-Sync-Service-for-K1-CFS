@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if test -f "/root/Filament-Sync-Service/service/sync.sh"; then
-    SYNCDIRECTORY="/root/Filament-Sync-Service/data"
+if test -f "/root/Filament-Sync-Service-for-K1-CFS/service/sync.sh"; then
+    SYNCDIRECTORY="/root/Filament-Sync-Service-for-K1-CFS/data"
 else
-    SYNCDIRECTORY="/mnt/UDISK/root/Filament-Sync-Service/data" 
+    SYNCDIRECTORY="/mnt/UDISK/root/Filament-Sync-Service-for-K1-CFS/data" 
 fi
 
 CREALITYDIRECTORY="/usr/data/creality/userdata/box"
