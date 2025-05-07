@@ -5,12 +5,8 @@ This fork is intended for use with the K1 Series printers.
 
 This is the printer service that syncs custom profiles with the printer database. Since Creality replaces the database with defaults on boot, this service will automatically restore your custom database when you power up the printer.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P11AL9ZR)
-
 
 ## Installation
-
-Git is already installed if you are using @jamincollins k2-improvements
 
 ### If git is not installed on printer
 
@@ -92,3 +88,6 @@ sh install.sh
 #### All done! Continue to install Filament-Sync on your pc
 [Filament-Sync](https://github.com/HurricanePrint/Filament-Sync)
 
+
+All credit goes to the original author of this script/service.  
+This is purely a fock to suit the K1 series printer with CFS upgrade kit.  
