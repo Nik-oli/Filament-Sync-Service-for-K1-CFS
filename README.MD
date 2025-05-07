@@ -37,7 +37,7 @@ sh install.sh
 In Terminal
 
 ```
-git clone https://github.com/HurricanePrint/Filament-Sync-Service.git
+git clone https://github.com/Nik-oli/Filament-Sync-Service-for-K1-CFS.git
 ```
 
 ```
