@@ -1,6 +1,8 @@
 
 
 # Filament Sync Service
+This fork is intended for use with the K1 Series printers.  
+
 This is the printer service that syncs custom profiles with the printer database. Since Creality replaces the database with defaults on boot, this service will automatically restore your custom database when you power up the printer.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P11AL9ZR)
