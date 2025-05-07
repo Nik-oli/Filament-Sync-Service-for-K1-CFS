@@ -6,7 +6,7 @@ else
     SYNCDIRECTORY="/mnt/UDISK/root/Filament-Sync-Service/data" 
 fi
 
-CREALITYDIRECTORY="/mnt/UDISK/creality/userdata/box"
+CREALITYDIRECTORY="/usr/data/creality/userdata/box"
 
 while :
 do
